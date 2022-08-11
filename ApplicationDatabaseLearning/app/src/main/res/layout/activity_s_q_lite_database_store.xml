@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLiteDatabaseStore">
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint ="Name"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/textA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint ="Email"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/textB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint ="Password"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/textA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/textC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint ="Confirm Password"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/textB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/textD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint ="Mobile"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/textC"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Signup"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/textD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
